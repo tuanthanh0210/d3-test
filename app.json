@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "wallet-eth-balance",
+      "script": "node dist/main.js",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
+      "autorestart": true,
+      "watch": true,
+      "timezone": "UTC"
+    },
+    {
+      "name": "wallet-eth-balance-crawler",
+      "script": "node dist/console.main.js crawler",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
+      "autorestart": true,
+      "watch": true,
+      "timezone": "UTC"
+    }
+  ]
+}
